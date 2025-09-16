@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deus Não Está Morto</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f3f3f3;
+      color: #333;
+    }
+
+    header {
+      background-color: #111;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    .banner {
+      width: 100%;
+      max-height: 400px;
+      overflow: hidden;
+    }
+
+    .banner img {
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .verses {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card p {
+      font-size: 1.1em;
+      font-style: italic;
+    }
+
+    .highlight {
+      color: #d62828;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 40px;
+    }
+
+    footer p {
+      margin: 10px 0;
+    }
+
+    button {
+      background-color: #d62828;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+      font-size: 1em;
+    }
+
+    button:hover {
+      background-color: #a71d1d;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Deus Não Está Morto</h1>
+    <p><em>"A fé é mais poderosa do que o medo."</em></p>
+  </header>
+
+
+
+  <div class="container">
+    <h2 style="text-align: center;">Frases para refletir e espalhar a fé:</h2>
+    <div class="verses" id="versesContainer">
+      <div class="card">
+        <p>“<span class="highlight">Deus não está morto</span>, Ele está vivo dentro de nós!”</p>
+      </div>
+      <div class="card">
+        <p>“A fé é a certeza do que esperamos e a prova do que não vemos.” — Hebreus 11:1</p>
+      </div>
+      <div class="card">
+        <p>“Se Deus é por nós, quem será contra nós?” — Romanos 8:31</p>
+      </div>
+      <div class="card">
+        <p>“Não tenha medo, apenas creia.” — Marcos 5:36</p>
+      </div>
+    </div>
+
+    <div style="text-align: center;">
+      <button onclick="addVerse()">Mostrar outra frase</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>“A luz brilha nas trevas, e as trevas não a derrotaram.” — João 1:5</p>
+    <p>Espalhe a fé. Compartilhe o amor. Viva o evangelho.</p>
+  </footer>
+
+  <script>
+    const verses = [
+      "“O Senhor é o meu pastor; nada me faltará.” — Salmos 23:1",
+      "“Entregue o seu caminho ao Senhor; confie nele, e ele agirá.” — Salmos 37:5",
+      "“Jesus respondeu: Eu sou o caminho, a verdade e a vida.” — João 14:6",
+      "“Busquem, pois, em primeiro lugar o Reino de Deus.” — Mateus 6:33",
+      "“Mesmo quando eu andar por um vale de trevas e morte, não temerei perigo algum.” — Salmos 23:4"
+    ];
+
+    function addVerse() {
+      const container = document.getElementById('versesContainer');
+      const index = Math.floor(Math.random() * verses.length);
+      const card = document.createElement('div');
+      card.className = 'card';
+      card.innerHTML = `<p>${verses[index]}</p>`;
+      container.appendChild(card);
+    }
+  </script>
+
+</body>
+
+</html>
