@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Página do Artista</title>
+  <link rel="stylesheet" href="musica.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">🎸 Nome do Artista</h1>
+      <ul class="nav-links">
+        <li><a href="#bio">Bio</a></li>
+        <li><a href="#music">Música</a></li>
+        <li><a href="#agenda">Agenda</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Bem-vindo ao mundo do som</h2>
+      <p>Sinta a vibração. Viva a música.</p>
+      <a href="#music" class="btn">Ouça Agora</a>
+    </div>
+  </section>
+
+  <section id="bio" class="bio">
+    <div class="container">
+      <h2>Sobre o Artista</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Músico apaixonado por ritmos envolventes, com mais de 10 anos de carreira e apresentações internacionais.
+      </p>
+      <img src="https://source.unsplash.com/800x400/?musician" alt="Foto do artista" class="bio-img">
+    </div>
+  </section>
+
+  <section id="music" class="music">
+    <div class="container">
+      <h2>Músicas & Vídeos</h2>
+      <div class="media-grid">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/oHg5SJYRHA0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/3tmd-ClpJxA" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section id="agenda" class="agenda">
+    <div class="container">
+      <h2>Próximos Shows</h2>
+      <ul class="shows-list">
+        <li>
+          <strong>25/09/2025</strong> – São Paulo, SP – Audio Club
+        </li>
+        <li>
+          <strong>30/09/2025</strong> – Rio de Janeiro, RJ – Circo Voador
+        </li>
+        <li>
+          <strong>05/10/2025</strong> – Belo Horizonte, MG – Autêntica
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contato" class="contato">
+    <div class="container">
+      <h2>Contato</h2>
+      <form class="contato-form">
+        <input type="text" placeholder="Seu nome" required />
+        <input type="email" placeholder="Seu e-mail" required />
+        <textarea placeholder="Sua mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+      <div class="social">
+        <a href="#">Instagram</a> |
+        <a href="#">Spotify</a> |
+        <a href="#">YouTube</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nome do Artista. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Banda - Música e Arte</title>
+    <link rel="stylesheet" href="music.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="logo">Sua Banda</a>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#music">Música</a></li>
+                <li><a href="#tour">Turnê</a></li>
+                <li><a href="#gallery">Galeria</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Sua Música, Sua Paixão</h1>
+                <p>Descubra o universo sonoro da nossa banda. Prepare-se para uma experiência inesquecível.</p>
+                <a href="#tour" class="cta-button">Ver Datas da Turnê</a>
+            </div>
+        </section>
+
+        <section id="about" class="section about-section">
+            <div class="container">
+                <h2>Sobre a Banda</h2>
+                <div class="about-content">
+                    <img src="images/banda-foto.jpg" alt="Foto da banda">
+                    <div class="text-content">
+                        <p>A banda **[Nome da Sua Banda]** foi formada em 2020 e rapidamente conquistou o público com seu som único, que mescla rock, pop e elementos eletrônicos. Nossas letras exploram temas como liberdade, sonhos e a vida moderna, ressoando com uma nova geração de ouvintes.</p>
+                        <p>Com um álbum de estreia aclamado pela crítica, estamos prontos para levar nossa música a todos os cantos do mundo. Junte-se a nós nesta jornada musical!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="music" class="section music-section">
+            <div class="container">
+                <h2>Nossa Música</h2>
+                <div class="music-grid">
+                    <div class="album-card">
+                        <img src="images/album-capa-1.jpg" alt="Capa do Álbum 1">
+                        <h3>O Despertar</h3>
+                        <p>Lançamento: 2022</p>
+                        <a href="#" class="play-button">Ouvir no Spotify</a>
+                    </div>
+                    <div class="album-card">
+                        <img src="images/album-capa-2.jpg" alt="Capa do Álbum 2">
+                        <h3>Reflexos Urbanos</h3>
+                        <p>Lançamento: 2024</p>
+                        <a href="#" class="play-button">Ouvir no Apple Music</a>
+                    </div>
+                </div>
+                <div class="featured-track">
+                    <h3>Ouça nosso novo single:</h3>
+                    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/SUA_TRACK_ID&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="tour" class="section tour-section">
+            <div class="container">
+                <h2>Próximos Shows</h2>
+                <ul class="tour-list">
+                    <li class="tour-item">
+                        <span class="tour-date">10 DE NOVEMBRO</span>
+                        <span class="tour-location">São Paulo, SP</span>
+                        <a href="#" class="tour-button">Comprar Ingressos</a>
+                    </li>
+                    <li class="tour-item">
+                        <span class="tour-date">25 DE NOVEMBRO</span>
+                        <span class="tour-location">Rio de Janeiro, RJ</span>
+                        <a href="#" class="tour-button">Comprar Ingressos</a>
+                    </li>
+                    <li class="tour-item">
+                        <span class="tour-date">08 DE DEZEMBRO</span>
+                        <span class="tour-location">Belo Horizonte, MG</span>
+                        <a href="#" class="tour-button">Comprar Ingressos</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="gallery" class="section gallery-section">
+            <div class="container">
+                <h2>Galeria de Fotos</h2>
+                <div class="gallery-grid">
+                    <img src="images/galeria-1.jpg" alt="Foto da banda em show">
+                    <img src="images/galeria-2.jpg" alt="Foto da banda em estúdio">
+                    <img src="images/galeria-3.jpg" alt="Foto da banda com fãs">
+                    <img src="images/galeria-4.jpg" alt="Foto de show ao vivo">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <h2>Contato</h2>
+                <form class="contact-form">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit" class="submit-button">Enviar Mensagem</button>
+                </form>
+                <div class="social-media">
+                    <h3>Siga-nos:</h3>
+                    <a href="https://instagram.com/suabanda" target="_blank" class="social-icon">Instagram</a>
+                    <a href="https://facebook.com/suabanda" target="_blank" class="social-icon">Facebook</a>
+                    <a href="https://youtube.com/suabanda" target="_blank" class="social-icon">YouTube</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Sua Banda. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

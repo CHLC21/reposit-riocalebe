@@ -1,0 +1,229 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #111;
+    color: #fff;
+    line-height: 1.6;
+  }
+  
+  a {
+    color: #1db954;
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 0;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+    color: #1db954;
+  }
+  
+  .nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #fff;
+  }
+  
+  /* Hero */
+  .hero {
+    background: url('https://source.unsplash.com/1600x900/?concert') no-repeat center center/cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+  }
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.6);
+  }
+  
+  .hero-content {
+    position: relative;
+    color: #fff;
+    z-index: 2;
+  }
+  
+  .hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .btn {
+    background: #1db954;
+    color: #000;
+    padding: 0.8rem 1.5rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background: #17a74a;
+  }
+  
+  /* Bio */
+  .bio {
+    background: #222;
+    padding: 4rem 0;
+  }
+  
+  .bio h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #1db954;
+  }
+  
+  .bio-img {
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto;
+    display: block;
+    border-radius: 10px;
+  }
+  
+  /* Music Section */
+  .music {
+    background: #111;
+    padding: 4rem 0;
+  }
+  
+  .music h2 {
+    text-align: center;
+    color: #1db954;
+    margin-bottom: 2rem;
+  }
+  
+  .media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .media-grid iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 8px;
+  }
+  
+  /* Agenda */
+  .agenda {
+    background: #222;
+    padding: 4rem 0;
+  }
+  
+  .agenda h2 {
+    text-align: center;
+    color: #1db954;
+    margin-bottom: 2rem;
+  }
+  
+  .shows-list {
+    max-width: 600px;
+    margin: auto;
+    font-size: 1.2rem;
+    line-height: 2;
+  }
+  
+  /* Contato */
+  .contato {
+    background: #111;
+    padding: 4rem 0;
+  }
+  
+  .contato h2 {
+    text-align: center;
+    color: #1db954;
+    margin-bottom: 2rem;
+  }
+  
+  .contato-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .contato-form input,
+  .contato-form textarea {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .contato-form button {
+    padding: 1rem;
+    background: #1db954;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .contato-form button:hover {
+    background: #17a74a;
+  }
+  
+  .social {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .social a {
+    margin: 0 10px;
+    font-weight: bold;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center}
+  
