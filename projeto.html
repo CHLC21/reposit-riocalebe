@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CyberHarmony - Música e Cibersegurança</title>
+  <link rel="stylesheet" href="projeto.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🎧 CyberHarmony</h1>
+      <p>Onde a música encontra a segurança digital</p>
+      <button id="toggleTheme" aria-label="Alternar modo claro/escuro" class="button9">🌓 Modo Claro/Escuro</button>
+    </header>
+
+    <section class="intro">
+      <h2>🔐 O que é Cibersegurança?</h2>
+      <p>A cibersegurança protege sistemas, redes e dados contra ataques. Assim como a música, ela depende de padrões e harmonia entre elementos.</p>
+    </section>
+
+    <section class="music-security">
+      <h2>🎵 Códigos & Sons</h2>
+      <p>Música e criptografia compartilham conceitos: cifras, padrões repetitivos, escalas e algoritmos. Sabia que é possível transformar uma senha em melodia?</p>
+      
+      <input
+        type="text"
+        id="passwordInput"
+        placeholder="Digite uma senha..."
+        aria-label="Campo para digitar senha"
+      />
+      <button id="playSound" aria-label="Tocar melodia da senha">🔊 Converter senha em música</button>
+    </section>
+
+    <section class="password-generator">
+      <h2>🎼 Gerador de Senha Musical Segura</h2>
+      <p>Clique no botão para criar uma senha segura que soe bem!</p>
+      <button id="generatePassword" aria-label="Gerar senha segura">🎹 Gerar Senha</button>
+      <input
+        type="text"
+        id="generatedPassword"
+        readonly
+        aria-label="Senha gerada"
+        placeholder="Senha gerada aparecerá aqui"
+      />
+    </section>
+
+    <section class="visualizer-section">
+      <h2>📊 Visualização da Melodia</h2>
+      <canvas id="audioVisualizer" width="800" height="150" aria-label="Visualizador de áudio"></canvas>
+    </section>
+
+    <section class="facts">
+      <h2>💡 Curiosidades</h2>
+      <ul>
+        <li>Senhas fortes são como melodias complexas: difíceis de reproduzir sem a fórmula certa.</li>
+        <li>Alguns sistemas de segurança usam algoritmos musicais para autenticação sonora.</li>
+        <li>Hackers podem analisar padrões sonoros de teclado para descobrir senhas!</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>Feira de Ciências 2025 - Desenvolvido por Calebe Correia 🧠</p>
+    </footer>
+  </div>
+
+  <script src="projeto.js"></script>
+</body>
+</html>
