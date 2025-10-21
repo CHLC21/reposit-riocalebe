@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    width: 60%;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.certificado {
+    border: 5px solid #555;
+    padding: 40px;
+    background-color: white;
+    margin-top: 20px;
+    position: relative;
+}
+
+#cert-content {
+    width: 100%;
+}
+
+.certificado h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.certificado h3 {
+    font-size: 26px;
+    margin: 20px 0;
+    color: #2e86de;
+}
+
+.certificado p {
+    font-size: 18px;
+}
+
+.data {
+    margin-top: 30px;
+    font-style: italic;
+}

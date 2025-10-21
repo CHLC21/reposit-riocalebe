@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificado de Programador</title>
+    <link rel="stylesheet" href="cert.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de Certificado</h1>
+        <input type="text" id="nome" placeholder="Digite seu nome completo" />
+        <button onclick="gerarCertificado()">Gerar Certificado</button>
+        <div id="certificado" class="certificado" style="display: none;">
+            <div id="cert-content">
+                <h2>Certificado de Programador</h2>
+                <p>Concedido a</p>
+                <h3 id="nome-certificado"></h3>
+                <p>Em reconhecimento pela conclusão do curso de Programação Online.</p>
+                <p class="data">Emitido em: <span id="data-atual"></span></p>
+            </div>
+        </div>
+        <button id="btn-download" onclick="baixarImagem()" style="display: none;">Baixar Certificado</button>
+    </div>
+
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="cert.js"></script>
+</body>
+</html>
